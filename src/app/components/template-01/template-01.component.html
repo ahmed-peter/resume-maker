@@ -1,27 +1,27 @@
 <header class="header bg-primary p-auto">
   <section>
     <div class="header">
-      <h1 class="text-center"> Dashboard </h1>
-      <div class="avatar">
+      <h1 class="text-center"> Carver </h1>
+      <!-- <div class="avatar">
         <img src="../assets/icon/userlogo.jpg" alt="">
-      </div>
+      </div> -->
     </div>
   </section>
 </header>
-<p class="title"> Welcome, Ahmed Peter</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nisi nulla provident rem quia impedit consectetur mollitia tempora soluta!</p>
+<p class="title"> Welcome, {{ userinfo.first_name }} {{ userinfo.last_name }}</p>
+<p>Prepare a killer resume in 5 minutes. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nisi nulla provident rem quia impedit consectetur mollitia tempora soluta!</p>
 <!-- <section class="container"> -->
 <section class="container m-t-lg">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon">
       <img src="../assets/icon/checklist.svg" alt="" class="icons center">
-      <p class="title center">Settings</p>
+      <p class="title center"> Make New</p>
     </div>
-    <div class="col-sm-4">
-      <img src="../assets/icon/document.svg" alt="" class="icons center">
+    <div class="col-sm-4 icon">
+      <img src="../assets/icon/checklist.svg" alt="" class="icons center">
       <p class="title center">Make New</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon">
       <img src="../assets/icon/checklist.svg" alt="" class="icons center">
       <p class="title center">Settings</p>
     </div>
@@ -29,17 +29,18 @@
 </section>
 <section class="container m-t-xxl">
   <div class="row">
-    <div class="col-sm-4">
-      <img src="../assets/icon/checklist.svg" alt="" class="icons center">
-      <p class="title center">Settings</p>
-    </div>
-    <div class="col-sm-4">
+    
+    <div class="col-sm-4 icon">
       <img src="../assets/icon/responsive.svg" alt="" class="icons center">
-      <p class="title center">Customize</p>
+      <p class="title center">{{ userinfo.email }}</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 icon">
       <img src="../assets/icon/customization.svg" alt="" class="icons center">
       <p class="title center">Settings</p>
+    </div>
+    <div class="col-sm-4 icon">
+      <img src="../assets/icon/checklist.svg" alt="" class="icons center">
+      <p class="title center">Help</p>
     </div>
   </div>
 </section>
